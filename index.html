@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        /* .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        } */
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<title>My Second Project..!!</title>
+
+<body>
+
+    <div class="header">
+        <h1 style="font-family: combo; color:rgb(95, 6, 6)">JADE & ANDY</h1>
+        <p style="font-family: combo; color:rgb(7, 3, 250)">VINTAGE CAR SPECIALIST</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#" style="font-family: combo;">HOME</a>
+        <a href="#" style="font-family: combo;">SERVICES</a>
+        <a href="#" style="font-family: combo;">OUR WORK</a>
+        <a href="#" style="font-family: combo;">ABOUT US</a>
+        <a href="#" style="font-family: combo;">CONTACT</a>
+        <a href="#" style="font-family: combo;">BOOK ONLINE</a>
+        <a href="#" style="float:right; color: red; font-family: combo">LOG IN</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h1 style="font-family: combo;"> Car Training !!</h1>
+                <h4 style="font-family: combo;">Repair Cars, 13 May, 2021</h4>
+                <div> <img src="p.jpeg"></div>
+                <p style="font-family: combo;">Car Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab saepe
+                    doloremque illo aspernatur
+                    accusantium ea accusamus aliquid ipsum consectetur quidem in dolores laudantium tempore quaerat,
+                    corrupti ducimus placeat voluptate amet sint facere neque. Magnam quod iure molestias eligendi odio,
+                    iste magni quam autem obcaecati atque hic minus qui repellendus dolorem?</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+            <div class="card">
+                <h1 style="font-family: combo;">Car Style !!</h1>
+                <h5 style="font-family: combo;">Different Part, 13 May, 2021</h5>
+                <div><img
+                        src="https://images.unsplash.com/photo-1620701450111-f5f244b77d0a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwOTE5NDc2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                </div>
+                <p style="font-family: combo;">Some text.. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quia sint, molestiae hic
+                    accusamus repudiandae maiores laborum saepe dolor, tempore commodi sunt numquam totam atque modi
+                    optio nobis aperiam vitae quos a aspernatur perspiciatis vel, ex impedit! Facere voluptatibus ex
+                    culpa vitae similique eum quas, fuga dignissimos autem quam quos temporibus illo provident, a ullam
+                    sunt. Cupiditate, eveniet necessitatibus. s.</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+            <div class="card">
+                <h1 style="font-family: combo;">Car Type !!</h1>
+                <h5 style="font-family: combo;">Different Type, 13 May, 2021</h5>
+                <div><img
+                        src="https://images.unsplash.com/photo-1620688862570-7b52847e9d8e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwOTIwMTQ0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000">
+                </div>
+                <p style="font-family: combo;">Some text.. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quia sint, molestiae hic
+                    accusamus repudiandae maiores laborum saepe dolor, tempore commodi sunt numquam totam atque modi
+                    optio nobis aperiam vitae quos a aspernatur perspiciatis vel, ex impedit! Facere voluptatibus ex
+                    culpa vitae similique eum quas, fuga dignissimos autem quam quos temporibus illo provident, a ullam
+                    sunt. Cupiditate, eveniet necessitatibus. s.</p>
+                <p style="font-family: combo;">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                    adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2 style="font-family: combo;">About Me</h2>
+                <div><img
+                        src="https://images.unsplash.com/photo-1620812736524-1d055db08889?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIwOTE1Mzc1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300">
+                </div>
+                <p style="font-family: combo;">Some text about me in culpa qui officia deserunt mollit anim.. Lorem
+                    ipsum dolor, sit amet
+                    consectetur adipisicing elit. Eius placeat numquam necessitatibus ea assumenda officiis incidunt,
+                    explicabo dignissimos labore autem sunt eum repellendus dolorum, neque, odio quisquam ducimus modi
+                    eveniet. Odit, quos ducimus officia sunt quas voluptate nostrum cum dolores aliquid! Quod molestias
+                    sapiente eligendi vel, porro quae nostrum neque.</p>
+            </div>
+
+            <div class="card">
+                <h2 style="font-family: combo;">Popular Post</h2>
+                <div><img src="h.jpeg"></div>
+                <p style="font-family: combo;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                    consequuntur ipsum, porro quisquam
+                    dolores ducimus placeat, dolorum ratione molestiae, earum laudantium? Recusandae tempora fugit hic
+                    numquam sed. Fugiat fuga praesentium fugit quas dolores rem, itaque reprehenderit quo ducimus
+                    similique eos eum culpa obcaecati, necessitatibus quae neque facilis perspiciatis inventore id!</p>
+                <div>
+                    <img src="o.jpeg">
+                </div>
+                <p style="font-family: combo;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dicta quia
+                    fugiat delectus a sint.
+                    Soluta harum repudiandae eligendi sed at optio odio consequatur, ut enim aut fugiat. Quis ad ullam
+                    blanditiis facere porro voluptatibus nemo nobis doloremque sed impedit veniam quod mollitia quos,
+                    iure reiciendis adipisci cum expedita dolore.</p>
+            </div>
+            <div class="card">
+                <h1 style="font-family: combo;">Follow Me</h1>
+                <p style="font-family: combo;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero commodi
+                    qui, nemo reiciendis provident
+                    libero quam minima repellendus voluptatum temporibus! In facilis placeat laudantium maxime. Odio,
+                    blanditiis ea aliquid doloribus maiores necessitatibus facilis nisi provident eveniet, culpa quos
+                    tempore tenetur recusandae nobis optio consectetur voluptates quia facere perspiciatis. Aperiam,
+                    quisquam?Lorem ipsum dolor sit amet consectetur adipisic. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Molestiae quos voluptatum quam numquam tenetur! Ut incidunt nesciunt dolores
+                    molestiae odio.lorem5 Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        </div>
+        <div class="col-6 col-md">
+            <h3 style="font-family: combo;">Features</h3>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Cool stuff</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Random feature</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Team feature</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Stuff for developers</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Another one</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h3 style="font-family: combo;">Resources</h3>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Resource name</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Resource</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Another resource</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h3 style="font-family: combo;"></h3>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Business</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Education</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Government</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Gaming</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h3 style="font-family: combo;">About</h3>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Team</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Locations</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Privacy</a></li>
+                <li><a class="link-secondary" href="#" style="font-family: combo;">Terms</a></li>
+            </ul>
+        </div>
+        </div>
+        <small class="d-block mb-3 text-muted">© 2020-2021</small>
+    </footer>
+
+
+</body>
+
+</html>
